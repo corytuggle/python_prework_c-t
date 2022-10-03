@@ -2,23 +2,27 @@
 # Write a function to print "hello_USERNAME!" USERNAME is the input of the function.
 
 
-# I'm not ~trying~ to be pedantic, but the instructions were slightly on the ambiguous side, when considering that every case matters with coding. It can be read two ways, so I'll just do them both.
+# I'm not ~trying~ to be pedantic, but the instructions were slightly on the ambiguous side, when considering that every case matters with coding. 
+# It can be read two ways, so I'll just do them both.
 
 # I'm going to follow them according the "spirit of the law" first:
 
-def hello_name(user_name):
+def hello_name():
     """Prints a greeting based on input."""
+    print('\n')
+    user_name = input('Please tell me your name: ')
     print(f"Hi {user_name.title()}!")
 
-hello_name('sydney')
+hello_name()
 
 # The below is if I'm following instructions to the "letter of the law":
 
-def hello_name(user_name):
+def hello_name():
     """Prints 'hello_' and the upper of the input."""
+    user_name = input('Please tell me your name: ')
     print(f"hello_{user_name.upper()}!")
 
-hello_name('sydney')
+hello_name()
 
 
 print('\n') # I've added these breaks just to help readability on the output
@@ -50,7 +54,7 @@ max_num_in_list([5, 83, 41, 0, 2389, 617])
 print('\n')
 
 ##### Question 4 #####
-# Write a funtion to return if the given year is a leap year.
+# Write a function to return if the given year is a leap year.
 # A leap year is divisible by 4, but not divisible by 100 unless it is also divisible by 400.
 # The return should be boolean type.
 
